@@ -1,0 +1,9 @@
+app:
+  build: .
+  ports:
+    - '8100:8100'
+    - '35729:35729'
+  volumes:
+    - .:/opt/dockerized-ionic-app
+    - /opt/dockerized-ionic-app/node_modules
+  command: ionic serve --all
